@@ -25,7 +25,7 @@ class Pensum(models.Model):
 class Asignacion(models.Model):
     materia = models.ForeignKey(Materia, on_delete=models.CASCADE)
     pensum = models.ForeignKey(Pensum, on_delete=models.CASCADE)
-    nota = models.IntegerField()
+    
 
 class AsignacionInLine(admin.TabularInline):
     model = Asignacion

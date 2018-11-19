@@ -1,0 +1,13 @@
+#El formulario es exactamente igual al que se utiliza para insertar en una sola tabla.
+
+#Recuerde que aquí se le indica lo que va a mostrar por medio del objeto formulario.as_p
+
+{% extends 'notas/base.html' %}
+
+    {% block content %}
+        <h1>Nueva pensum</h1>
+        <form method="POST" class="post-form">{% csrf_token %}
+            {{ formulario.as_p }}
+            <button type="submit" class="save btn btn-default">Guardar</button>
+        </form>
+    {% endblock %}

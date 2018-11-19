@@ -5,9 +5,7 @@ class PensumForm(forms.ModelForm):
 
     class Meta:
         model = Pensum
-        fields = ('alumno', 'nombre_grado', 'seccion_grado', 'cliclo', 'materias')
-
-
+        fields = ('alumno', 'nombre_grado', 'seccion_grado', 'ciclo', 'materias')
 
 
 def __init__ (self, *args, **kwargs):
