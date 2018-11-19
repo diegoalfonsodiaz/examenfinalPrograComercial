@@ -15,9 +15,9 @@ class Materia(models.Model):
 
 class Pensum(models.Model):
     alumno    = models.CharField(max_length=250)
-    nombre    = models.CharField(max_length=250)
-    seccion   = models.CharField(max_length=250)
-    anio      = models.IntegerField()
+    nombre_grado    = models.CharField(max_length=250)
+    seccion_grado   = models.CharField(max_length=250)
+    ciclo      = models.IntegerField() 
     materias   = models.ManyToManyField(Materia, through='Asignacion')
     def __str__(self):
         return self.alumno

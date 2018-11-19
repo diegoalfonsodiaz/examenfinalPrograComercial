@@ -1,3 +1,5 @@
 from django.contrib import admin
+from notas.models import *
 
-# Register your models here.
+admin.site.register(Materia, MateriaAdmin)
+admin.site.register(Pensum, PensumAdmin)
